@@ -17,9 +17,9 @@ const App = () => {
 
     useEffect(
         useCallback(() => {
-            setTimeout(() => {
-                setPaused(true);
-            }, 30000);
+            // setTimeout(() => {
+            //     setPaused(true);
+            // }, 10000);
         }, []),
         [],
     );
@@ -42,7 +42,7 @@ const App = () => {
             }}>
             <VideoPlayer
                 source={
-                    'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+                    'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4'
                 }
                 autoPlay={true}
                 paused={paused}
